@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elecciones de Personería Escolar</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos del body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    /* Cabecera */
+    header {
+      background-color: #004d40;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navegación principal */
+    nav ul {
+      list-style: none;
+      background-color: #00695c;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      float: left;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li:hover {
+      background-color: #004d40;
+    }
+
+    /* Submenú desplegable */
+    nav ul li ul {
+      display: none;           /* oculto por defecto */
+      position: absolute;
+      top: 100%;               /* justo debajo del padre */
+      left: 0;
+      list-style: none;
+      background-color: #b2dfdb;
+      min-width: 180px;
+      z-index: 10;
+    }
+
+    nav ul li:hover > ul {
+      display: block;          /* se muestra al hacer hover */
+    }
+
+    /* Ítems del submenú */
+    nav ul li ul li {
+      float: none;             /* quita float de los sub-ítems */
+    }
+
+    nav ul li ul li a {
+      color: #004d40;
+      font-weight: normal;
+    }
+
+    nav ul li ul li:hover {
+      background-color: #80cbc4;
+    }
+
+    /* Contenido principal */
+    .container {
+      padding: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00796b;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elecciones de Personería Escolar 2025</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#biografia">Biografía</a></li>
+      <li>
+        <a href="#secciones">Secciones ▼</a>
+        <ul>
+          <li><a href="#propuestas">Propuestas</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </li>
+      <li><a href="#votar">¿Cómo Votar?</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div id="inicio" class="card">
+      <h2>¡Vota por Laura Martínez!</h2>
+      <img src="laura-candidata.jpg" alt="Foto de Laura Martínez">
+      <p><strong>Curso:</strong> 10°B</p>
+      <p><strong>Eslogan:</strong> “Juntos podemos lograr un colegio mejor”</p>
+      <a href="#votar" class="button">¡Apóyala Aquí!</a>
+    </div>
+
+    <div id="biografia" class="card">
+      <h2>Biografía</h2>
+      <p>Laura es estudiante de 10°B con pasión por el medio ambiente y la convivencia escolar...</p>
+    </div>
+
+    <div id="propuestas" class="card">
+      <h2>Propuestas Principales</h2>
+      <ul>
+        <li>Mejorar los espacios de descanso</li>
+        <li>Crear campañas de reciclaje</li>
+        <li>Promover actividades culturales</li>
+        <li>Escuchar y representar a todos los estudiantes</li>
+      </ul>
+    </div>
+
+    <div id="galeria" class="card">
+      <h2>Galería</h2>
+      <p>Aquí irían algunas fotos de Laura en actividades escolares.</p>
+    </div>
+
+    <div id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p>Correo: laura.martinez@colegio.edu</p>
+      <p>Instagram: @laura.personeria</p>
+    </div>
+  </div>
+
+</body>
+</html>
